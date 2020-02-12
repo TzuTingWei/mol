@@ -1,7 +1,7 @@
 mol
 ==============================
 [//]: # (Badges)
-[![Travis Build Status](https://travis-ci.com/REPLACE_WITH_OWNER_ACCOUNT/mol.svg?branch=master)](https://travis-ci.com/REPLACE_WITH_OWNER_ACCOUNT/mol)
+#[![Travis Build Status](https://travis-ci.com/REPLACE_WITH_OWNER_ACCOUNT/mol.svg?branch=master)](https://travis-ci.com/REPLACE_WITH_OWNER_ACCOUNT/mol)
 [![codecov](https://codecov.io/gh/REPLACE_WITH_OWNER_ACCOUNT/mol/branch/master/graph/badge.svg)](https://codecov.io/gh/REPLACE_WITH_OWNER_ACCOUNT/mol/branch/master)
 
 [![Build Status](https://travis-ci.org/TzuTingWei/mol.svg?branch=master)](https://travis-ci.org/TzuTingWei/mol)
