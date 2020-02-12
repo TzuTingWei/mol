@@ -5,6 +5,8 @@ workshop pkg
 
 # Add imports here
 from .mol import *
+from . import util
+
 
 # Handle versioneer
 from ._version import get_versions
