@@ -5,7 +5,7 @@ workshop pkg
 
 # Add imports here
 from .mol import *
-from . import util
+# from . import util
 from . import data
 
 # Handle versioneer
