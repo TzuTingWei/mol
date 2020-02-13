@@ -13,3 +13,10 @@ def test_mol_imported():
 
 def test_canvas():
     assert mol.canvas()
+
+
+def test_molecular():
+    moldata = mol.Molecule(["He", "He"], [[0,0,0], [0,0,1]])
+    assert pytest.approx(1.0) == mol.distance(0,1)
+
+

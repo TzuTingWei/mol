@@ -5,6 +5,8 @@ workshop pkg
 Handles the primary functions
 """
 
+import numpy as np
+from .util import distance 
 
 def canvas(with_attribution=True):
     """
@@ -27,6 +29,30 @@ def canvas(with_attribution=True):
     if with_attribution:
         quote += "\n\t- Adapted from Henry David Thoreau"
     return quote
+
+
+
+class Molecule:
+    def __init__(self, symbols, geometry):
+        self.symbols = np.asarray(symbols, dtype=str)
+        self.geometry = np.asarray(geometry, dtype=float)
+
+        if len(self.geometry.shape) !=2:
+            self.geometry = self.geometry.reshape(-1, 3) 
+        if self.symbols.shape[0] != self.geometry.shape[0]:
+            raise ValueError("Symbol and geometry length does not match!")
+    def distance(self, index1, index2):
+        return distance(self.geometry[index1], self.geometry[index2])
+
+
+
+# enables Molecule(symbols, geometry)
+# can set a lot of function, if statement, etc. for security check bla bla
+
+
+
+
+
 
 
 if __name__ == "__main__":
