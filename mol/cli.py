@@ -1,5 +1,5 @@
 import argparse
-from .util import read_xyz
+from .util import read_xyz, distance
 
 def main():
 	parser = argparse.ArgumentParser(description='A Molecule utility that reads XYZ files and calculates the distance between atoms at index1 and index2.')
@@ -11,5 +11,17 @@ def main():
 	print(args)
 
 	moldata = read_xyz(args.filename)
+	print(f"Reading XYZ file: {args.filename}")
+	#print("Reading XYZ file:{}".format(args.filename))
+	#print(moldata)
+	print("Calculating distance...")
+	dist = distance(moldata["geometry"][args.index1], moldata["geometry"][args.index2])
+	
+	s1 = moldata["symbols"][args.index1]
+	s2 = moldata["symbols"][args.index2]
+	
+	print(f"Distance between {agrs.s1} and {args.s2} = {agrs.dist}A")
 
-	print(moldata)
+
+
+
