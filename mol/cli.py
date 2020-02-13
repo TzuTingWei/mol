@@ -14,14 +14,15 @@ def main():
 	print(f"Reading XYZ file: {args.filename}")
 	#print("Reading XYZ file:{}".format(args.filename))
 	#print(moldata)
+
 	print("Calculating distance...")
+
 	dist = distance(moldata["geometry"][args.index1], moldata["geometry"][args.index2])
-	
+
 	s1 = moldata["symbols"][args.index1]
 	s2 = moldata["symbols"][args.index2]
 	
-	print(f"Distance between {agrs.s1} and {args.s2} = {agrs.dist}A")
-
+	print(f"Distance between atoms {args.index1}:{s1} and {args.index2}:{s2} = {dist:.3f}Å")
 
 
 

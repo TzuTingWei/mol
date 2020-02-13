@@ -4,8 +4,9 @@ import numpy as np
 def distance(point1, point2):
     """
     Calculate distance between two points.
+
     Parameters
-    ----------
+    -------
     point1 : array_like
         The first point.
     point2 : array_like
@@ -22,6 +23,18 @@ def distance(point1, point2):
 
 
 def read_xyz(filename):
+    """
+    Read in the indicated file.
+
+    Parameters
+    -------
+    filename : string
+        The file which contain the atom symbol and geometry.
+    Returns
+    -------
+    np.array
+        A np.array of the file.
+    """
 
     with open(filename, "r") as handle:
         data = handle.readlines()
