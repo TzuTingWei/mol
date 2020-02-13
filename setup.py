@@ -21,7 +21,7 @@ except:
 
 setup(
     # Self-descriptive entries which should always be present
-    name='mol',
+    name='mol-ttwei',
     author='Cindy Wei',
     author_email='tzu-ting.wei@mdc-berlin.de',
     description=short_description[0],
