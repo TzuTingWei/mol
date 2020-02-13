@@ -42,6 +42,9 @@ class Molecule:
         if self.symbols.shape[0] != self.geometry.shape[0]:
             raise ValueError("Symbol and geometry length does not match!")
     def distance(self, index1, index2):
+        """
+        the upstream of NamedMolecule
+        """
         return distance(self.geometry[index1], self.geometry[index2])
 
 
@@ -51,7 +54,18 @@ class Molecule:
 
 
 
+class NamedMolecule(Molecule):
+    """
+    It's a class.
 
+    Parameters
+    --------
+    names: sjfhb
+    """
+
+    def __init__(self, name, symbols, geometry):
+        self.name = name
+        super().__init__(symbols, geometry) # another magic function
 
 
 

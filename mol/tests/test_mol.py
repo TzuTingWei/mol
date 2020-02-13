@@ -19,5 +19,7 @@ def test_molecular():
     moldata = mol.Molecule(["He", "He"], [[0,0,0], [0,0,1]])
     assert pytest.approx(1.0) == moldata.distance(0,1)
 
-
+def test_name_molecule_distance():
+    moldata = mol.NamedMolecule("He2", ["He", "He"], [[0,0,0], [0,0,1]])
+    assert pytest.approx(1.0) == moldata.distance(0,1)
 
