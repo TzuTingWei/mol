@@ -10,3 +10,6 @@ import sys
 def test_mol_imported():
     """Sample test, will always pass so long as import statement worked"""
     assert "mol" in sys.modules
+
+def test_canvas():
+    assert mol.canvas()

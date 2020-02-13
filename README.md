@@ -1,11 +1,13 @@
 mol
 ==============================
 [//]: # (Badges)
-[![Travis Build Status](https://travis-ci.com/REPLACE_WITH_OWNER_ACCOUNT/mol.svg?branch=master)](https://travis-ci.com/REPLACE_WITH_OWNER_ACCOUNT/mol)
+[![Build Status](https://travis-ci.org/TzuTingWei/mol.svg?branch=master)](https://travis-ci.org/TzuTingWei/mol)
 [![codecov](https://codecov.io/gh/REPLACE_WITH_OWNER_ACCOUNT/mol/branch/master/graph/badge.svg)](https://codecov.io/gh/REPLACE_WITH_OWNER_ACCOUNT/mol/branch/master)
 
+
+
 Date: 12.02.2020
-A python workshop pkg
+A python workshop pkg with pytest
 
 ### Copyright
 

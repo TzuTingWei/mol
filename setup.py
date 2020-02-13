@@ -30,7 +30,7 @@ setup(
     version=versioneer.get_version(),
     cmdclass=versioneer.get_cmdclass(),
     license='MIT',
-
+    entry_points={"console_scripts":["mol-distance=mol.cli:main",]},
     # Which Python importable modules should be included when your package is installed
     # Handled automatically by setuptools. Use 'exclude' to prevent some specific
     # subpackage(s) from being added, if needed
@@ -46,7 +46,7 @@ setup(
 
     # Additional entries you may want simply uncomment the lines you want and fill in the data
     # url='http://www.my_package.com',  # Website
-    # install_requires=[],              # Required packages, pulls from pip if needed; do not use for Conda deployment
+    install_requires=[],              # Required packages, pulls from pip if needed; do not use for Conda deployment
     # platforms=['Linux',
     #            'Mac OS-X',
     #            'Unix',
